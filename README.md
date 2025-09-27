@@ -8,8 +8,8 @@
 A powerful, modern desktop application that automates the process of capturing and processing web page screenshots at scale, with intelligent content detection and seamless API integration.
 
 <p align="center">
-  <img src="images/main-interface.png" alt="Main Interface" width="400"/>
-  <img src="images/Login.png" alt="Login Interface" width="400"/>
+  <img src="main-interface.png" alt="Main Interface" width="400"/>
+  <img src="Login.png" alt="Login Interface" width="400"/>
 </p>
 
 ## � Context & Problem Statement
