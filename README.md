@@ -7,7 +7,7 @@
 
 A powerful, modern desktop application that automates the process of capturing and processing web page screenshots at scale, with intelligent content detection and seamless API integration.
 
-![Main Interface](images/main-interface.png)
+![Main Interface](social-monitoring-starter/main-interface.png)
 
 ## � Context & Problem Statement
 
