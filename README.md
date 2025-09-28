@@ -7,11 +7,11 @@
 A powerful, modern desktop application that automates the process of capturing and processing web page screenshots at scale, with intelligent content detection and seamless API integration.
 
 <p align="center">
-  <img src="Login.png" alt="Login Interface" width="400"/>
+  <img src="images\Login.png" alt="Login Interface" width="400"/>
 </p>
 
 <p align="center">
-  <img src="main-interface.png" alt="Main Interface" width="700"/>
+  <img src="images\main-interface.png" alt="Main Interface" width="700"/>
 </p>
 
 
@@ -53,10 +53,15 @@ WebCapture Pro solves these challenges by providing:
   - Customizable data mapping
   - Automatic error handling
   - Retry mechanisms
+  - Upload results to the company environement by API
+ 
+<p align="center">
+  <img src="images\Upload-screenshots.png" alt="Main Interface" width="700"/>
+</p>
 
 - 📊 **Advanced Features**
   - Multiple screenshot types (fullpage/content)
-  - Various image formats (PNG/JPEG/WebP)
+  - Various image formats (PNG/JPEG/jpg)
   - CSV data import/export
   - Detailed logging and reporting
 
@@ -135,7 +140,12 @@ python -m src.tools.csv_screenshots articles.csv \
   --image-format jpg \
   --output-dir data/csv_screenshots_content
 ```
+
 ## 🛠️ Configuration
+ 
+ <p align="center">
+  <img src="images\Configuration.png" alt="Main Interface" width="700"/>
+</p>
 
 ### CSV Format Requirements
 Your CSV file should include these columns:
@@ -158,6 +168,11 @@ The tool includes optimized selectors for these Moroccan news portals:
 And many more Moroccan/Arabic news sites with specialized content detection patterns.
 
 ## ⚙️ Advanced Options
+ 
+ <p align="center">
+  <img src="images\Screenshots-settings.png" alt="Main Interface" width="700"/>
+</p>
+
 ### Screenshot Types
 `fullpage`: Full webpage screenshot
 
@@ -170,7 +185,7 @@ And many more Moroccan/Arabic news sites with specialized content detection patt
 
 `jpeg`: Compressed format, smaller file size
 
-`webp`: Modern format, good compression
+`jpg`: Modern format, good compression
 
 ### Performance Tuning
 `--max-workers`: Number of parallel browsers (3-5 recommended)
