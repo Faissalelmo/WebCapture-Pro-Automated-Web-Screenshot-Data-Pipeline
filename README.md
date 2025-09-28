@@ -53,7 +53,7 @@ WebCapture Pro solves these challenges by providing:
   - Customizable data mapping
   - Automatic error handling
   - Retry mechanisms
-  - Upload results to the company environement by API
+  - Upload results to the company's environement by API
  
 <p align="center">
   <img src="images\Upload-screenshots.png" alt="Main Interface" width="700"/>
