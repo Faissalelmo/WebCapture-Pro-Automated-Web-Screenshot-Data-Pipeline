@@ -14,10 +14,6 @@ A powerful, modern desktop application that automates the process of capturing a
 - 🔐 **Enterprise-grade** reliability with graceful error handling
 
 <p align="center">
-  <img src="images\Login.png" alt="Login Interface" width="400"/>
-</p>
-
-<p align="center">
   <img src="images\main-interface.png" alt="Main Interface" width="700"/>
 </p>
 
