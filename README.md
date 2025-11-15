@@ -376,6 +376,9 @@ https://icirabat.com/article-1,12345,Regional News
 https://hespress.com/politics/1234,12346,Politics
 https://alassima24.ma/sports/456,12347,Sports
 ```
+ <p align="center">
+  <img src="images\Configuration.png" alt="Main Interface" width="700"/>
+</p>
 
 **Output Structure:**
 ```
@@ -463,32 +466,6 @@ DOMAIN_TIMING = {
 ```
 
 ---
-
-## 🛠️ Configuration
- 
- <p align="center">
-  <img src="images\Configuration.png" alt="Main Interface" width="700"/>
-</p>
-
-### CSV Format Requirements
-Your CSV file should include these columns:
-
-- `lien_web`: URL to capture
-
-- `id`: Unique identifier for filename
-
-- `support_titre`: Category for organizing screenshots
-
-### Supported Moroccan News Websites
-
-The tool includes optimized selectors for these Moroccan news portals:
-
-- **Regional News**: `icirabat.com`, `icinador.com`, `icimeknes.com`
-- **City Portals**: `icimarrakech.com`, `iciguercif.com`, `icifes.com`  
-- **Local News**: `icidakhla.com`, `icicasa.com`, `iciagadir.com`
-- **Media Networks**: `ichrakanews.com`, `i3lamtv.com`, `i3lam24.com`
-
-And many more Moroccan/Arabic news sites with specialized content detection patterns.
 
 ## ⚙️ Advanced Options
  
