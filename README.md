@@ -69,10 +69,6 @@ Organizations managing web content face critical challenges:
   - Automatic error handling
   - Retry mechanisms
   - Upload results to the company's environement by API
- 
-<p align="center">
-  <img src="images\Upload-screenshots.png" alt="Main Interface" width="700"/>
-</p>
 
 - 📊 **Advanced Features**
   - Multiple screenshot types (fullpage/content)
@@ -435,7 +431,7 @@ python -m src.tools.uploader \
   --token YOUR_JWT_TOKEN
 ```
 <p align="center">
-  <img src="images\Screenshots-settings.png" alt="Main Interface" width="700"/>
+  <img src="images\Upload-screenshots.png" alt="Main Interface" width="700"/>
 </p>
 
 **API Configuration:**
