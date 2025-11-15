@@ -895,7 +895,7 @@ WebCapture Pro automates large-scale web screenshot capture with ML-powered cont
 
 **Want to know more?**
 - 📹 [YouTube Demo](https://www.youtube.com/watch?v=mq4nIEeFY6c&pp=ygUOd2ViY2FwdHVyZSBwcm8%3D) - See it in action
-- 💻 [GitHub Repo]([https://github.com](https://github.com/Faissalelmo/WebCapture-Pro-Automated-Web-Screenshot-Data-Pipeline/tree/main)) - Explore the code
+- 💻 [GitHub Repo](https://github.com/Faissalelmo/WebCapture-Pro-Automated-Web-Screenshot-Data-Pipeline/tree/main) - Explore the code
 - 📊 [Case Study](./CASE_STUDY.md) - Deep dive analysis
 - 📧 [Contact Me](faissalelmokaddem@mail.com) - Let's talk!
 
