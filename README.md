@@ -894,7 +894,7 @@ This project demonstrates:
 WebCapture Pro automates large-scale web screenshot capture with ML-powered content detection. Built with PyQt5 (UI), Playwright (automation), and Python (backend), it processes **1000+ URLs daily** with **99%+ accuracy**. Demonstrates full-stack skills, clean architecture, and production-ready thinking.
 
 **Want to know more?**
-- 📹 [YouTube Demo]([https://www.youtube.com/watch?v=mq4nIEeFY6c&pp=ygUOd2ViY2FwdHVyZSBwcm8%3D]) - See it in action
+- 📹 [YouTube Demo](https://www.youtube.com/watch?v=mq4nIEeFY6c&pp=ygUOd2ViY2FwdHVyZSBwcm8%3D) - See it in action
 - 💻 [GitHub Repo]([https://github.com](https://github.com/Faissalelmo/WebCapture-Pro-Automated-Web-Screenshot-Data-Pipeline/tree/main)) - Explore the code
 - 📊 [Case Study](./CASE_STUDY.md) - Deep dive analysis
 - 📧 [Contact Me](faissalelmokaddem@mail.com) - Let's talk!
