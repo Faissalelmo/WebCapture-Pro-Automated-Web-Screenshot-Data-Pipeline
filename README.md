@@ -774,22 +774,6 @@ python src/main_app.py --workers 2 --batch-size 10 --delay 0.5
 
 ---
 
-## 📞 Support & Contact
-
-### Getting Help
-1. **Check Documentation:** Read `IMPROVEMENTS_SUMMARY.md` for detailed guides
-2. **Review Examples:** See usage examples in README
-3. **Check Logs:** Look in `logs/upload_log.txt` for error details
-4. **Search Issues:** Check GitHub issues for similar problems
-
-### Quick Links
-- 📖 [Full Documentation](./docs/)
-- 🐛 [Report a Bug](https://github.com/yourusername/webcapture-pro/issues)
-- 💡 [Request a Feature](https://github.com/yourusername/webcapture-pro/issues)
-- 💬 [Discussions](https://github.com/yourusername/webcapture-pro/discussions)
-
----
-
 ## 📜 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
