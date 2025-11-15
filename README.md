@@ -111,16 +111,50 @@ python src/main_integrated.py
 ```
 ## 🏗️ Project Structure
 ```
-Screenshot Automation Tool/
-├─ README.md
-├─ requirements.txt
-├─ src/
-│  ├─ __init__.py
-│  └─ tools/
-│     ├─ csv_screenshots.py
-│     ├─ screenshots.py
-│     └─ ui.py
+WebCapture Pro/
+├── 📄 README.md                          # Project documentation
+├── 📄 requirements.txt                   # Python dependencies
+├── 📄 setup_path.ps1                     # Windows setup script
+│
+├── 📁 src/                               # Main application
+│   ├── __init__.py
+│   ├── main_app.py                       # Entry point (main window)
+│   │   └─ 150+ lines: Operation control, upload UI, threading
+│   ├── 📁 tools/                         # Core modules
+│   │   ├── ui.py                         # Base UI components
+│   │   ├── screenshots.py                # Screenshot engine
+│   │   │   └─ Domain-specific selectors for 50+ news sites
+│   │   ├── csv_screenshots.py            # CSV batch processor
+│   │   ├── uploader.py                   # API upload client
+│   │   ├── api_selection_dialog.py       # UI for API selection
+│   │   ├── modern_login_window.py        # Authentication UI
+│   │   ├── progress_dialog.py            # Progress reporting
+│   │   ├── models.py                     # Data models & persistence
+│   │   ├── upload_config.py              # API configuration
+│   │   ├── upload_utils.py               # Upload utilities
+│   │   ├── web_bridge.py                 # Web-desktop bridge
+│   │   ├── background_widget.py          # UI components
+│   │   ├── header_widget.py              # Header UI
+│   │   └── fake_api.py                   # Testing/demo API
+│   │
+│   └── 📁 web/                           # Web assets
+│       ├── main_interface.html           # Main UI template
+│       ├── login.html                    # Login template
+│       └── 📁 assets/                    # Images & resources
+│
+├── 📁 data/                              # Output directory
+│   ├── csv_screenshots/                  # Screenshots organized by category
+│   │   ├── website_1/
+│   │   │   ├── fullpage/                 # Full page captures
+│   │   │   └── content/                  # Content-only captures
+│   │   └── screenshot_results_TIMESTAMP.csv
+│   └── Data1/                            # Alternative output location
+│
+└── 📁 logs/                              # Application logs
+    └── upload_log.txt                    # Detailed operation logs
 ```
+
+---
 ## 🎯 Usage
 
 Graphical Interface
