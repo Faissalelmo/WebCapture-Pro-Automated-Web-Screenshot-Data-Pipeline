@@ -203,32 +203,6 @@ Week 4: Scale to enterprise volume
 ```
 
 ---
-## 🚀 Getting Started
-
-### Prerequisites
-```bash
-Python 3.8 or higher
-pip (Python package manager)
-Git
-```
-
-### Installation
-
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/webcapture-pro.git
-cd webcapture-pro
-```
-
-2. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-3. Launch the application
-```bash
-python src/main_integrated.py
-```
 ## 🏗️ Project Structure
 ```
 WebCapture Pro/
@@ -273,27 +247,222 @@ WebCapture Pro/
 └── 📁 logs/                              # Application logs
     └── upload_log.txt                    # Detailed operation logs
 ```
+---
+## 🛠️ Installation & Setup
+
+### Prerequisites
+
+```bash
+# Required
+Python 3.8 or higher
+pip (Python package manager)
+Git
+Windows 10+ / macOS 10.14+ / Linux
+
+# Optional (for development)
+Visual Studio Code
+Git Bash or PowerShell
+```
+
+### Quick Start (5 seconds)
+
+#### Step 1: Clone Repository
+```bash
+git clone https://github.com/yourusername/webcapture-pro.git
+cd webcapture-pro
+```
+
+#### Step 2: Install Dependencies
+```bash
+# Windows
+pip install -r requirements.txt
+
+# macOS / Linux
+pip3 install -r requirements.txt
+```
+
+#### Step 3: Run Application
+```bash
+# Windows
+python src/main_app.py
+
+# macOS / Linux
+python3 src/main_app.py
+```
+
+#### Step 4: Login
+```
+1. Enter credentials in the modern login window
+2. Application will initialize main interface
+3. Ready to start capturing!
+```
+<p align="center">
+  <img src="images\Login.png" alt="Login Interface" width="400"/>
+</p>
+
+### Advanced Setup
+
+#### Using Virtual Environment (Recommended)
+```bash
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment
+# Windows
+venv\Scripts\activate
+
+# macOS / Linux
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+#### Troubleshooting Installation
+```bash
+# Update pip
+python -m pip install --upgrade pip
+
+# Clear pip cache if issues
+pip cache purge
+
+# Install specific version if conflicts
+pip install PyQt5==5.15.7 Playwright==1.40.0
+```
+
+---
+
+## 📋 Dependencies Overview
+
+| Package | Version | Purpose |
+|---------|---------|---------|
+| **PyQt5** | 5.15+ | Desktop UI framework |
+| **PyQtWebEngine** | 5.15+ | Embedded browser |
+| **Playwright** | 1.20+ | Modern browser automation |
+| **Selenium** | 4.0+ | Legacy web automation |
+| **Pandas** | 1.3+ | Data processing & CSV |
+| **Pillow** | 8.0+ | Image processing |
+| **Requests** | 2.25+ | HTTP client |
+| **BeautifulSoup4** | 4.9+ | HTML parsing |
+| **python-dotenv** | 0.19+ | Configuration management |
 
 ---
 ## 🎯 Usage
 
-Graphical Interface
+### 1️⃣ GUI: Screenshot Capture (Most Common)
+
 ```bash
-python -m src.tools.ui
+python src/main_app.py
 ```
-Command Line Screenshot Tool
+
+**Workflow:**
+1. Launch application
+2. Login with credentials
+3. Select "Screenshot" mode
+4. Upload CSV file with URLs
+5. Configure options:
+   - Screenshot type: `content` or `fullpage`
+   - Image format: `png`, `jpeg`, or `webp`
+   - Parallel workers: 3-5 (recommended)
+   - Delay between requests: 0.5-2 seconds
+6. Click "Start"
+7. Monitor progress in real-time
+8. Results saved to `data/csv_screenshots/`
+
+**Example CSV Format:**
+```csv
+lien_web,id,support_titre
+https://icirabat.com/article-1,12345,Regional News
+https://hespress.com/politics/1234,12346,Politics
+https://alassima24.ma/sports/456,12347,Sports
+```
+
+**Output Structure:**
+```
+data/csv_screenshots/
+├── Regional News/
+│   ├── fullpage/
+│   │   ├── 12345.png
+│   │   └── 12345.webp
+│   └── content/
+│       ├── 12345.png
+│       └── 12345_cropped.jpg
+├── Politics/
+│   └── ...
+└── screenshot_results_20251115_143022.csv
+```
+
+### 2️⃣ CLI: Batch Processing
+
 ```bash
-python -m src.tools.csv_screenshots articles.csv \
+python -m src.tools.csv_screenshots data/urls.csv \
   --url-column lien_web \
   --filename-column id \
   --support-column support_titre \
-  --batch-size 5 \
-  --max-workers 3 \
-  --delay 0.5 \
+  --batch-size 10 \
+  --max-workers 5 \
+  --delay 1.0 \
   --screenshot-type content \
-  --image-format jpg \
-  --output-dir data/csv_screenshots_content
+  --image-format webp \
+  --output-dir data/batch_output
 ```
+
+**Parameters Explained:**
+- `--url-column`: CSV column containing URLs
+- `--filename-column`: Column for output filename
+- `--support-column`: Column for organizing results
+- `--batch-size`: URLs per batch (10-20 recommended)
+- `--max-workers`: Parallel browsers (3-5 recommended)
+- `--delay`: Seconds between requests (0.5-2.0)
+- `--screenshot-type`: `fullpage`, `content`, or `both`
+- `--image-format`: `png`, `jpeg`, or `webp`
+- `--output-dir`: Directory for results
+
+### 3️⃣ API Upload Integration
+
+```bash
+# After capturing screenshots, upload to API
+python -m src.tools.uploader \
+  --folder data/csv_screenshots/Regional\ News/content/ \
+  --api-type content \
+  --token YOUR_JWT_TOKEN
+```
+
+**API Configuration:**
+```python
+# src/tools/upload_config.py
+API_ENDPOINTS = {
+    'fullpage': 'https://api.example.com/images/fullpage',
+    'content': 'https://api.example.com/images/content',
+    'metadata': 'https://api.example.com/metadata'
+}
+
+AUTH_CONFIG = {
+    'timeout': 30,
+    'retry_attempts': 3,
+    'retry_delay': 2
+}
+```
+
+### 4️⃣ Advanced: Custom Content Detection
+
+```python
+# Add domain-specific selectors in screenshots.py
+DOMAIN_SELECTORS = {
+    "mynewsite.com": [
+        ".article-main",           # Primary selector
+        ".post-content",           # Fallback 1
+        "article",                 # Fallback 2
+    ]
+}
+
+# Custom timing optimization
+DOMAIN_TIMING = {
+    'mynewsite.com': 3000,  # 3 seconds for slow sites
+}
+```
+
+---
 
 ## 🛠️ Configuration
  
