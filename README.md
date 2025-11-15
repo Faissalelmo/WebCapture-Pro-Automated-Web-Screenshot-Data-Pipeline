@@ -662,90 +662,6 @@ Design Details:
 
 ---
 
-## 📸 Image Placement Guide
-
-### 🎯 Recommended Screenshot Locations
-
-**1. Hero Section (Top of README)**
-```markdown
-## 📸 [Hero Image Placeholder]
-*Screenshot: Main application window with modern dark theme, showing:
-- Login interface with gradient header
-- Main processing dashboard
-- Real-time progress bar with statistics
-- Multi-tab interface (Screenshots, Upload, Settings)*
-```
-
-**2. Architecture Section**
-```markdown
-### 📐 [System Architecture Diagram]
-*Diagram showing:
-- PyQt5 UI layer
-- Worker thread architecture
-- Playwright browser engine
-- API integration layer
-- File I/O and storage*
-```
-
-**3. Features Section**
-```markdown
-### 🎯 [Feature Showcase Grid - 3x2]
-*Screenshots showing:
-1. Content detection in action
-2. Progress tracking UI
-3. URL selection interface
-4. API upload dialog
-5. Settings/Configuration panel
-6. Results visualization*
-```
-
-**4. Usage Examples Section**
-```markdown
-### 💡 [Demo Workflow Screenshots]
-*Side-by-side comparison:
-- LEFT: CSV input with 500 URLs
-- RIGHT: Processed output organized by category
-- MIDDLE: Progress timeline*
-```
-
-**5. Project Highlights Section**
-```markdown
-### 🏆 [Performance Comparison Chart]
-*Visual comparison showing:
-- Manual vs Automated timeline
-- Speed improvement (7x faster)
-- Accuracy metrics
-- Resource usage efficiency*
-```
-
-**6. UI Enhancements Section**
-```markdown
-### [Before/After UI Comparison - 3 rows]
-Row 1: Operation Control
-- Before: No feedback when starting duplicate job
-- After: Clear warning dialog with confirmation
-
-Row 2: URL Selection
-- Before: Process all rows indiscriminately  
-- After: Checkbox interface with select all/deselect
-
-Row 3: Upload Progress
-- Before: Basic progress bar
-- After: Modern gradient design with real-time stats
-```
-
-**7. Roadmap Section**
-```markdown
-### [Timeline Visualization]
-*Horizontal timeline showing:
-- Phase 1 (Current) - Completed milestones
-- Phase 2 (Q1 2025) - Upcoming features
-- Phase 3 (Q2 2025) - Cloud integration
-- Phase 4 (Q3-Q4 2025) - AI features*
-```
-
----
-
 ## 🤝 Contributing
 
 We welcome contributions! Whether you're fixing bugs, adding features, or improving documentation, here's how:
@@ -885,8 +801,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ✅ You can distribute the software
 ✅ You can use it privately
 
-⚠️  You must include the license and copyright notice
-⚠️  The software is provided "as is" without warranty
 ```
 
 **Full License Text:**
