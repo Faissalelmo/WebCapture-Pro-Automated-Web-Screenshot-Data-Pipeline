@@ -410,6 +410,10 @@ python -m src.tools.csv_screenshots data/urls.csv \
   --output-dir data/batch_output
 ```
 
+<p align="center">
+  <img src="images\Screenshots-settings.png" alt="Main Interface" width="700"/>
+</p>
+
 **Parameters Explained:**
 - `--url-column`: CSV column containing URLs
 - `--filename-column`: Column for output filename
@@ -430,6 +434,9 @@ python -m src.tools.uploader \
   --api-type content \
   --token YOUR_JWT_TOKEN
 ```
+<p align="center">
+  <img src="images\Screenshots-settings.png" alt="Main Interface" width="700"/>
+</p>
 
 **API Configuration:**
 ```python
@@ -467,33 +474,6 @@ DOMAIN_TIMING = {
 
 ---
 
-## ⚙️ Advanced Options
- 
- <p align="center">
-  <img src="images\Screenshots-settings.png" alt="Main Interface" width="700"/>
-</p>
-
-### Screenshot Types
-`fullpage`: Full webpage screenshot
-
-`content`: Article content only (smart detection)
-
-`both`: Both fullpage and content screenshots
-
-### Image Formats
-`png`: Lossless format, best for text
-
-`jpeg`: Compressed format, smaller file size
-
-`jpg`: Modern format, good compression
-
-### Performance Tuning
-`--max-workers`: Number of parallel browsers (3-5 recommended)
-
-`--delay`: Delay between requests to avoid rate limiting
-
-`--batch-size`: Process in smaller batches for stability
-
 ## 🎯 Smart Content Detection
 The tool uses multiple strategies to find article content:
 
@@ -504,28 +484,6 @@ The tool uses multiple strategies to find article content:
 3. Aggressive detection: Text density and paragraph counting
 
 4. Fallback methods: Full-page capture when content detection fails
-
-## 📊 Output
-### Screenshot Output
-```batch
-data/
-├─ csv_screenshots/                # Default output directory
-│  ├─ website_name/                # Organized by support_titre
-│  │  ├─ fullpage/                 # Full page screenshots
-│  │  └─ content/                  # Content-only screenshots
-│  └─ screenshot_results_TIMESTAMP.csv  # Processing metadata
-```
-#### The results CSV includes:
-
-- Original URL and metadata
-
-- Screenshot file paths
-
-- Success/failure status
-
-- Processing time
-
-- Error messages (if any)
 
 ## 🔧 Troubleshooting
 ### Common Screenshot Issues
