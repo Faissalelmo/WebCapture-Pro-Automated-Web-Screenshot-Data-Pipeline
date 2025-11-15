@@ -15,7 +15,7 @@ A powerful, modern desktop application that automates the process of capturing a
 </p>
 
 
-## � Context & Problem Statement
+## Context & Problem Statement
 
 In today's digital landscape, organizations face the challenge of systematically capturing and archiving web content from numerous sources. Manual screenshot capture is:
 - Time-consuming and error-prone
@@ -64,24 +64,62 @@ WebCapture Pro solves these challenges by providing:
   - Various image formats (PNG/JPEG/jpg)
   - CSV data import/export
   - Detailed logging and reporting
+## 🚀 Methodology
 
-## �️ Technology Stack
+### Architecture & Design Philosophy
 
-- **Frontend:**
-  - PyQt5 for desktop interface
-  - QWebEngine for web rendering
-  - HTML5/CSS3 for modern UI components
+```
+┌─────────────────────────────────────────────────────────────┐
+│                   Modern PyQt5 Desktop App                   │
+│              (Intuitive, Responsive, Professional)           │
+└────────────┬────────────────────────────────────────────────┘
+             │
+    ┌────────┴─────────┬──────────────────┐
+    │                  │                  │
+    ▼                  ▼                  ▼
+┌─────────┐      ┌──────────┐      ┌──────────┐
+│ Browser │      │ Content  │      │   API    │
+│Automation│      │Detection │      │Integration
+│(Playwright)    │(Smart AI)│      │(REST API)│
+└────┬────┘      └──────────┘      └──────────┘
+     │
+     ▼
+┌────────────────────────────┐
+│ Multi-threaded Processing  │
+│  (5-10 parallel workers)   │
+└────────────┬───────────────┘
+             │
+    ┌────────┴────────┬───────────┐
+    ▼                 ▼           ▼
+┌────────┐      ┌────────┐   ┌────────┐
+│ Output │      │ Logs & │   │  CSV   │
+│Images  │      │Reports │   │ Export │
+└────────┘      └────────┘   └────────┘
+```
+### Technology Stack
 
-- **Backend:**
-  - Python 3.8+
-  - Selenium WebDriver
-  - Multi-threading
-  - REST API integration
+**Frontend & UI:**
+- **PyQt5** - Modern, responsive desktop interface
+- **QWebEngine** - Embedded Chromium rendering
+- **Custom Styling** - Professional dark theme with gradient accents
 
-- **Data Processing:**
-  - Pandas for data handling
-  - PIL for image processing
-  - Custom content detection algorithms
+**Backend & Processing:**
+- **Python 3.8+** - High-performance scripting
+- **Playwright** - Modern browser automation (headless)
+- **Selenium** - Legacy support & flexible targeting
+- **Multi-threading** - Non-blocking UI, parallel processing
+- **Pandas** - Data manipulation & CSV handling
+
+**Image Processing:**
+- **Pillow (PIL)** - Image format conversion & optimization
+- **Playwright Screenshot** - High-fidelity capture
+- **Custom Filters** - Content isolation & enhancement
+
+**API & Data:**
+- **REST API Integration** - Secure authentication
+- **JWT/Token-based Auth** - Enterprise security
+- **Custom Retry Logic** - Graceful failure handling
+- **Rate Limiting** - Respect server resources
 
 ## �🚀 Getting Started
 
