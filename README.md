@@ -69,32 +69,32 @@ WebCapture Pro solves these challenges by providing:
 ### Architecture & Design Philosophy
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                   Modern PyQt5 Desktop App                   │
-│              (Intuitive, Responsive, Professional)           │
-└────────────┬────────────────────────────────────────────────┘
-             │
-    ┌────────┴─────────┬──────────────────┐
-    │                  │                  │
-    ▼                  ▼                  ▼
-┌─────────┐      ┌──────────┐      ┌──────────┐
-│ Browser │      │ Content  │      │   API    │
-│Automation│      │Detection │      │Integration
-│(Playwright)    │(Smart AI)│      │(REST API)│
-└────┬────┘      └──────────┘      └──────────┘
-     │
-     ▼
-┌────────────────────────────┐
-│ Multi-threaded Processing  │
-│  (5-10 parallel workers)   │
-└────────────┬───────────────┘
-             │
-    ┌────────┴────────┬───────────┐
-    ▼                 ▼           ▼
-┌────────┐      ┌────────┐   ┌────────┐
-│ Output │      │ Logs & │   │  CSV   │
-│Images  │      │Reports │   │ Export │
-└────────┘      └────────┘   └────────┘
+                                      ┌─────────────────────────────────────────────────────────────┐
+                                      │                   Modern PyQt5 Desktop App                   │
+                                      │              (Intuitive, Responsive, Professional)           │
+                                      └────────────┬────────────────────────────────────────────────┘
+                                                   │
+                                          ┌────────┴─────────┬──────────────────┐
+                                          │                  │                  │
+                                          ▼                  ▼                  ▼
+                                      ┌─────────┐      ┌──────────┐      ┌──────────┐
+                                      │ Browser │      │ Content  │      │   API    │
+                                      │Automation│      │Detection │      │Integration
+                                      │(Playwright)    │(Smart AI)│      │(REST API)│
+                                      └────┬────┘      └──────────┘      └──────────┘
+                                           │
+                                           ▼
+                                      ┌────────────────────────────┐
+                                      │ Multi-threaded Processing  │
+                                      │  (5-10 parallel workers)   │
+                                      └────────────┬───────────────┘
+                                                   │
+                                          ┌────────┴────────┬───────────┐
+                                          ▼                 ▼           ▼
+                                      ┌────────┐      ┌────────┐   ┌────────┐
+                                      │ Output │      │ Logs & │   │  CSV   │
+                                      │Images  │      │Reports │   │ Export │
+                                      └────────┘      └────────┘   └────────┘
 ```
 ### Technology Stack
 
