@@ -934,53 +934,9 @@ Whether you're looking to use this tool, contribute to its development, or simpl
 
 ### Built with ❤️ using Python, PyQt5, and Passion for Clean Code
 
-**[⭐ Star this repo](#) · [🍴 Fork it](#) · [💬 Discuss](#) · [📧 Contact](#)**
+**[⭐ Star this repo](#) · [🍴 Fork it](#) · [💬 Discuss](#) · [📧 Contact](faissalelmokaddem@mail.com)**
 
 </div>
-
-
-## 🎯 Smart Content Detection
-The tool uses multiple strategies to find article content:
-
-1. Domain-specific selectors: Pre-configured for known sites
-
-2. Generic patterns: Common article/content selectors
-
-3. Aggressive detection: Text density and paragraph counting
-
-4. Fallback methods: Full-page capture when content detection fails
-
-## 🔧 Troubleshooting
-### Common Screenshot Issues
-1. Timeout errors: Increase delay or reduce max-workers
-
-2. Empty screenshots: Check if website requires JavaScript
-
-3. Popup interference: The tool automatically handles common popups
-
-### Performance Tips
-- Use --delay 1.0 for more reliable results
-
-- Start with small --batch-size for testing
-
-- Monitor memory usage with high --max-workers
-
-## 🤝 Contributing
-
-1. Improve selectors: Update existing configurations
-
-2. Add features: Extend the base scraper or UI
-
-3. Test thoroughly: Ensure compatibility with existing functionality
-
-#### Contribution Process
-1. Fork the repository
-
-2. Create a feature branch
-
-3. Add tests for new functionality
-
-4. Submit a pull request
 
 ## 🆘 Support
 For issues and questions:
