@@ -81,8 +81,8 @@ Organizations managing web content face critical challenges:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                   Modern PyQt5 Desktop App                   │
-│              (Intuitive, Responsive, Professional)           │
+│                   Modern PyQt5 Desktop App                  │
+│              (Intuitive, Responsive, Professional)          │
 └────────────┬────────────────────────────────────────────────┘
              │
     ┌────────┴─────────┬──────────────────┐
@@ -90,7 +90,7 @@ Organizations managing web content face critical challenges:
     ▼                  ▼                  ▼
 ┌─────────┐      ┌──────────┐      ┌──────────┐
 │ Browser │      │ Content  │      │   API    │
-│Automation│      │Detection │      │Integration
+│Automation│     │Detection │      │Integration
 │(Playwright)    │(Smart AI)│      │(REST API)│
 └────┬────┘      └──────────┘      └──────────┘
      │
